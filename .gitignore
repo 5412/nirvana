@@ -1,0 +1,23 @@
+# some ide project files
+.idea
+/.idea
+/.vscode
+
+# version control should not be committed to you application's source control
+.git
+.svn
+
+# vagrant runtime
+/.vagrant
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# vendor dir
+/vendor
+
+# Your's .env file should not be committed to your application's source control.
+.env
