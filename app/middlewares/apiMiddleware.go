@@ -32,6 +32,9 @@ func ApiTokenAuthMiddleware() gin.HandlerFunc {
 			responseError(401, "Unauthorized:error api_token", context)
 			return
 		}
+
+		context.Set("currentUser", user)
+
 		context.Next()
 	}
 }
