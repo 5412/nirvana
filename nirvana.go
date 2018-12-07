@@ -21,7 +21,7 @@ func main() {
 
 	router := routers.InitRouter()
 
-	err := router.Run("80")
+	err := router.Run(":80")
 
 	if err != nil {
 		log.Println(err)
