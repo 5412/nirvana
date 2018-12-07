@@ -26,7 +26,19 @@ func GetUserById(id int) (u *User) {
 	user := &User{Id: id}
 	is, _ := database.Orm.Get(user)
 	if !is {
-		log.Fatal("搜索结果不存在!")
+		log.Println("can't find user by id:", id)
+	}
+	return user
+}
+
+func GetUserByApiToken(token string) (u *User)  {
+	user := &User{ApiToken: token}
+	is, err := database.Orm.Where("api_token = ?", token).Get(user)
+	if !is {
+		log.Println("can't find user by api_token:", token)
+	}
+	if err != nil {
+		log.Println(err)
 	}
 	return user
 }

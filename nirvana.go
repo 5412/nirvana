@@ -19,7 +19,7 @@ func main() {
 		}
 	}()
 
-	router := routers.InitRouter()
+	router := routers.Router
 
 	err := router.Run(":80")
 
