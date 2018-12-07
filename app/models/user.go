@@ -17,6 +17,7 @@ type User struct {
 	Tel       string    `json:"tel" form:"tel"`
 	Account   string    `json:"account" form:"account"`
 	Password  string    `json:"password" form:"password"`
+	ApiToken string  	`json:"api_token" form:"api_token"`
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
