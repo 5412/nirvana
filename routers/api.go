@@ -6,7 +6,7 @@ package routers
 
 import (
 	"nirvana/app/controllers"
-	"nirvana/app/middlewares"
+	"nirvana/middlewares"
 )
 
 func initApi()  {
