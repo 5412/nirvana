@@ -20,6 +20,7 @@ func main() {
 	}()
 
 	router := routers.Router
+	router.LoadHTMLGlob("templates/**/*")
 
 	err := router.Run(":80")
 
